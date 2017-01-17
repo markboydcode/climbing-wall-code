@@ -14,8 +14,8 @@ GPIO.setup("XIO-P1", GPIO.IN)
 GPIO.output("XIO-P0", GPIO.HIGH) # turn LED off
 
 while True:
-    if GPIO.input('XIO-P1') :
+    if GPIO.input('XIO-P1'):
         GPIO.output("XIO-P0", GPIO.LOW)
-    else
+    else:
         GPIO.output("XIO-P0", GPIO.HIGH)
     time.sleep(0.05)  # sleep 50 milliseconds before checking again
