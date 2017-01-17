@@ -8,7 +8,7 @@ GPIO.setup("XIO-P0", GPIO.OUT)
 
 GPIO.output("XIO-P0", GPIO.HIGH)
 
-while True
+while True:
     GPIO.output("XIO-P0", GPIO.LOW)
     time.sleep(1)
     GPIO.output("XIO-P0", GPIO.HIGH)
