@@ -30,7 +30,7 @@ while True:
             if btn.isReleased():
                 b.turnOff()
                 print(btn.color + " released")
-        else
+        else:
             if btn.isPressed():
                 b.turnOn()
                 print(btn.color + " pressed")
