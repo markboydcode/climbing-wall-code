@@ -23,9 +23,10 @@ isPressed = False
 
 while True:
 
-    time.sleep(0.05)  # sleep 50 milliseconds before checking again
+    time.sleep(1.00)  # sleep 50 milliseconds before checking again
 
     for btn in buttons:
+        print("checking: " + btn.color)
         if btn.isLedOn():
             if btn.isReleased():
                 b.turnOff()
