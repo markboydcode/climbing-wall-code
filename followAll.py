@@ -26,7 +26,7 @@ while True:
     time.sleep(3.00)  # sleep 50 milliseconds before checking again
     print("----------------------")
     for btn in buttons:
-        print("checking: " + btn.color + " - on: " + btn.isLedOn())
+        print("checking: " + btn.color + " - on: " + str(btn.isLedOn()))
         if btn.isLedOn():
             btn.turnOff()
             #if btn.isReleased():
