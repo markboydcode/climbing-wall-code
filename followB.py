@@ -19,12 +19,12 @@ isPressed = False
 
 while True:
     if isPressed:
-        if b.isReleased()
+        if b.isReleased():
             isPressed = False
             b.turnOff()
             print("released")
     else:
-        if b.isPressed()
+        if b.isPressed():
             isPressed = True
             b.turnOff()
             print("pressed")
