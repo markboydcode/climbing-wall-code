@@ -7,12 +7,10 @@
 # LED should be extinguished
 
 import time
-import Button
+from Button import Button
 import CHIP_IO.GPIO as GPIO
 
 b = Button("XIO-P1", "XIO-P0")
-GPIO.setup("XIO-P0", GPIO.OUT)
-GPIO.setup("XIO-P1", GPIO.IN)
 
 isPressed = False
 
