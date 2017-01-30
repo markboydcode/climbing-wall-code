@@ -10,7 +10,7 @@ import time
 from Button import Button
 import CHIP_IO.GPIO as GPIO
 
-b = Button("BLUE", ""XIO-P1", "XIO-P0")
+b = Button("BLUE", "XIO-P1", "XIO-P0")
 
 isPressed = False
 
