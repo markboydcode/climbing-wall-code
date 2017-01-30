@@ -1,3 +1,4 @@
+
 # the following assumes that an LED is run from VCC to xio-p0 with its cathode in the latter
 # ie: pulling pin low turns LED on, setting high turns it off
 
@@ -25,11 +26,14 @@ while True:
     time.sleep(3.00)  # sleep 50 milliseconds before checking again
     print("----------------------")
     for btn in buttons:
+        print("checking: " + btn.color + " - on: " + str(btn.isLedOn()))
         if btn.isLedOn():
-            if btn.isReleased():
-                btn.turnOff()
-                print(btn.color + " released")
+            btn.turnOff()
+            #if btn.isReleased():
+            #    btn.turnOff()
+            #    print(btn.color + " released")
         else:
-            if btn.isPressed():
-                btn.turnOn()
-                print(btn.color + " pressed")
+            btn.turnOn()
+            #if btn.isPressed():
+            #    btn.turnOn()
+            #    print(btn.color + " pressed")
