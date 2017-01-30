@@ -30,6 +30,6 @@ class Button():
         GPIO.output(self.__outputPin, GPIO.HIGH) # turn LED off via driving high
         self._isOn = false
 
-    def isLedOn(self)
+    def isLedOn(self):
         return self._isOn
 
