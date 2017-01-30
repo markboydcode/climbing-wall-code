@@ -11,11 +11,11 @@ from Button import Button
 import CHIP_IO.GPIO as GPIO
 
 buttons = [
-    Button("RED", "LCD-D4", "LCD-D3"),
-    Button("YELLOW", "LCD-D6", "LCD-D5"),
-    Button("BLUE", "LCD-D10", "LCD-D7"),
-    Button("GREEN", "LCD-D12", "LCD-D11"),
-    Button("WHITE", "LCD-D14", "LCD-D13")
+    Button("RED", "LCD-D3", "LCD-D4"),
+    Button("YELLOW", "LCD-D5", "LCD-D6"),
+    Button("BLUE", "LCD-D7", "LCD-D10"),
+    Button("GREEN", "LCD-D11", "LCD-D12"),
+    Button("WHITE", "LCD-D13", "LCD-D14")
 ]
 
 isPressed = False
