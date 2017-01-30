@@ -22,7 +22,7 @@ isPressed = False
 
 while True:
 
-    time.sleep(3.00)  # sleep 50 milliseconds before checking again
+    time.sleep(0.05)  # sleep 50 milliseconds before checking again
     print("----------------------")
     for btn in buttons:
         if btn.isLedOn():
