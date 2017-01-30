@@ -24,6 +24,6 @@ while True:
     else:
         if b.isPressed():
             isPressed = True
-            b.turnOff()
+            b.turnOn()
             print("pressed")
     time.sleep(0.05)  # sleep 50 milliseconds before checking again
