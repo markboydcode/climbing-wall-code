@@ -6,6 +6,7 @@ class Button():
         self.__color = color
         self.__outputPin = outputPin
         self.__inputPin = inputPin
+        self._isOn = False
 
         GPIO.setup(outputPin, GPIO.OUT)
         GPIO.setup(inputPin, GPIO.IN)
@@ -24,11 +25,11 @@ class Button():
 
     def turnOn(self):
         GPIO.output(self.__outputPin, GPIO.LOW) # turn LED on via active low (ie: sink) common cathode pin
-        self._isOn = true
+        self._isOn = True
 
     def turnOff(self):
         GPIO.output(self.__outputPin, GPIO.HIGH) # turn LED off via driving high
-        self._isOn = false
+        self._isOn = False
 
     def isLedOn(self):
         return self._isOn
