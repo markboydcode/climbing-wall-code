@@ -25,9 +25,9 @@ isPressed = False
 
 
 while True:
-    btn = buttons[random.randint(0, len(buttons));
-    print(btn.color);
-    btn.turnOn();
+    btn = buttons[random.randint(0, len(buttons))]
+    print(btn.color)
+    btn.turnOn()
     time.sleep(1)  # sleep 50 milliseconds before checking again
     btn.turnOff();
 #    for btn in buttons:
