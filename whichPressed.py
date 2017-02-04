@@ -9,6 +9,9 @@ import time
 from Button import Button
 import CHIP_IO.GPIO as GPIO
 
+# simple test that watches for button press and turns on light for that button and turns off when released and logs
+# which button was pressed and released.
+
 buttons = [
     Button("RED", "XIO-P0", "LCD-D4"),
     Button("YELLOW", "XIO-P1", "LCD-D6"),
