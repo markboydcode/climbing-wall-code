@@ -30,6 +30,7 @@ while True:
     btn.turnOn()
     time.sleep(1)  # sleep 50 milliseconds before checking again
     btn.turnOff();
+    time.sleep(0.25)  # sleep 50 milliseconds before checking again
 #    for btn in buttons:
 #        if btn.isLedOn():
 #            if btn.isReleased():
