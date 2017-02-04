@@ -27,7 +27,7 @@ isPressed = False
 while True:
 
     time.sleep(1)  # sleep 50 milliseconds before checking again
-    print(random.randint(0,4);
+    print(random.randint(0,4));
 #    for btn in buttons:
 #        if btn.isLedOn():
 #            if btn.isReleased():
