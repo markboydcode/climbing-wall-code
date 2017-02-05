@@ -11,9 +11,10 @@ class FlashThru():
         self._timesRepeat = timesRepeat
 
     def run(self):
-        times = range(self._timesRepeat - 1)
+        times = range(self._timesRepeat)
         print("range: " + str(times))
         for i in times:
+            print("i: " + str(i))
             for btn in self._buttons:
                 btn.turnOn()
                 time.sleep(self._onPer)
@@ -31,7 +32,7 @@ class FlashAll():
         self._timesRepeat = timesRepeat
 
     def run(self):
-        for i in range(self._timesRepeat - 1):
+        for i in range(self._timesRepeat):
             for btn in self._buttons:
                 btn.turnOn()
 
