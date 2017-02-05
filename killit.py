@@ -27,7 +27,7 @@ while True:
     btn = buttons[random.randint(0, len(buttons)-1)]
     print(btn.color)
     btn.turnOn()
-    while ! btn.isReleasd():
+    while btn.isReleased() == False:
         time.sleep(0.05)  # sleep 50 milliseconds before checking again
 
     btn.turnOff();
