@@ -26,7 +26,7 @@ def getAnother(btns, current):
     while btn == current:
         btn = getRandomButton(btns)
     return btn
-
+print("millis: " + str(int(round(time.time() * 1000))))
 btn = getRandomButton(buttons)
 
 while True:
