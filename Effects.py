@@ -1,5 +1,4 @@
 
-import range
 import time
 
 # FlashThru takes an array of Button, the amount of seconds that each should be lighted (onPer), the amount of seconds
