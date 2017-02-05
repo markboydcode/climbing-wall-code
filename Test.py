@@ -14,7 +14,7 @@ buttons = [
     Button("WHITE", "XIO-P4", "LCD-D14")
 ]
 
-scroll = FlashThru(buttons, 0.3, 0.1, 3)
+scroll = FlashThru(buttons, 0.05, 0.01, 5)
 
 while True:
     btn = buttons[random.randint(0, len(buttons)-1)]
