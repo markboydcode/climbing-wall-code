@@ -2,7 +2,7 @@ import time
 from Button import Button
 import CHIP_IO.GPIO as GPIO
 import random
-form Effects import FlashThru
+from Effects import FlashThru
 
 # tests
 
