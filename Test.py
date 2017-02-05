@@ -3,6 +3,7 @@ from Button import Button
 import CHIP_IO.GPIO as GPIO
 import random
 from Effects import FlashThru
+from Effects import FlashAll
 
 # tests
 
