@@ -1,7 +1,7 @@
-# the following assumes that an LED is run from VCC to xio-p0 with its cathode in the latter
+# the following assumes that an LED is run from VCC to an output pin with its cathode in the latter
 # ie: pulling pin low turns LED on, setting high turns it off
 
-# it also assums a normally-open pushbutton is connected between ground and xio-p1
+# it also assums a normally-open pushbutton is connected between ground and its input pin
 # when the pushbutton is pressed the LED should light. when it is released the
 # LED should be extinguished
 
@@ -12,7 +12,7 @@ import CHIP_IO.GPIO as GPIO
 # simple test that watches for button press and turns on light for that button and turns off when released and logs
 # which button was pressed and released.
 
-buttons = [
+buttons = [ # color, inputPin (button), outputPin (active low LED)
     Button("RED", "XIO-P0", "LCD-D4"),
     Button("YELLOW", "XIO-P1", "LCD-D6"),
     Button("BLUE", "XIO-P2", "LCD-D10"),
