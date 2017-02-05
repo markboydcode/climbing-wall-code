@@ -17,3 +17,26 @@ class FlashThru():
                 time.sleep(self._onPer)
                 btn.turnOff()
                 time.sleep(self._delayTilNext)
+
+
+# FlashAll takes an array of Button, the amount of seconds that all should be lighted (onAll), the amount of seconds
+# delay until they light again, and the number of times that the entire row should be flashed.
+class FlashAll():
+    def __init__(self, buttons, onAll, delayTilNext, timesRepeat):
+        self._buttons = buttons
+        self._onPer = onAll
+        self._delayTilNext = delayTilNext
+        self._timesRepeat = timesRepeat
+
+    def run(self):
+        for i in range(self._timesRepeat - 1):
+            for btn in self._buttons:
+                btn.turnOn()
+
+            time.sleep(self._onPer)
+
+            for btn in self._buttons:
+                btn.turnOff()
+
+            time.sleep(self._delayTilNext)
+

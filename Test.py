@@ -15,6 +15,7 @@ buttons = [
 ]
 
 scroll = FlashThru(buttons, 0.05, 0.01, 5)
+blinkEm = FlashThru(buttons, 0.1, 0.02, 5)
 
 while True:
     btn = buttons[random.randint(0, len(buttons)-1)]
@@ -24,5 +25,8 @@ while True:
         time.sleep(0.05)  # sleep 50 milliseconds before checking again
 
     btn.turnOff()
-    scroll.run()
+    if random.randint(0, 1) == 0:
+        scroll.run()
+    else:
+        blinkEm.run()
     time.sleep(0.25)  # sleep 50 milliseconds before checking again
