@@ -27,10 +27,10 @@ def getAnother(btns, current):
         btn = getRandomButton(btns)
     return btn
 
-btn = getRandomButton(btns)
+btn = getRandomButton(buttons)
 
 while True:
-    btn = getAnother(btns, btn)
+    btn = getAnother(buttons, btn)
     print(btn.color)
     btn.turnOn()
     while btn.isPressed() == False:
