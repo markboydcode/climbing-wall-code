@@ -16,7 +16,7 @@ buttons = [
 ]
 
 scroll = FlashThru(buttons, 0.05, 0.01, 3)
-blinkEm = FlashAll(buttons, 0.15, 0.1, 4)
+blinkEm = FlashAll(buttons, 0.15, 0.15, 4)
 
 while True:
     btn = buttons[random.randint(0, len(buttons)-1)]
