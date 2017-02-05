@@ -12,7 +12,7 @@ class FlashThru():
 
     def run(self):
         times = range(self._timesRepeat - 1)
-        print("range: " + times)
+        print("range: " + str(times))
         for i in times:
             for btn in self._buttons:
                 btn.turnOn()
