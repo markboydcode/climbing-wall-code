@@ -26,7 +26,7 @@ class Continuous():
         return False
 
 
-def blinkTimes(durationMillis, times):K
+def blinkTimes(durationMillis, times):
     # blink means off for half and on for half. Each of these halfs is a phase. There are twice as many phases as
     # there are flashes.
     phases = times * 2
