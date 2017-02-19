@@ -42,7 +42,7 @@ def blinkTimes(btn, durationMillis, times):
         endPhase = currentMillis() + phaseDuration
 
         while currentMillis() < endPhase:
-            if self._btn.isPressed():
+            if btn.isPressed():
                 return True
             time.sleep(0.01)
 
