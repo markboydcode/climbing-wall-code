@@ -49,8 +49,6 @@ def blinkTimes(durationMillis, times):
 
 # turns on for first third of time, flashes for next third, flashes twice the speed for last third
 class TriPhase():
-    def __init__(self, totalSeconds):
-
 
     def solicit(self, btn, totalSeconds):
         totalMillis = totalSeconds * 1000
