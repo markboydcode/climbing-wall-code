@@ -57,7 +57,7 @@ class TriPhase():
         btn.turnOn()
 
         while currentMillis() < end1st:
-            if self.btn.isPressed():
+            if btn.isPressed():
                 return True
             time.sleep(0.01)
 
