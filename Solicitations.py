@@ -3,7 +3,7 @@ import time
 
 # milliseconds since the epoch
 def currentMillis():
-    return int(round(time.time() * 1000)))
+    return int(round(time.time() * 1000))
 
 # Continuous takes a Button, the amount of seconds that it should solicit a press, and then turns on the LED for that
 # amount of time waiting for its button to be pressed. If pressed before the time runs out, the solicit returns with
