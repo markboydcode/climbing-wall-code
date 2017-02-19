@@ -41,8 +41,7 @@ def blinkTimes(btn, durationMillis, times):
             btn.turnOn()
         endPhase = currentMillis() + phaseDuration
 
-        while currentMillis() < endPhase:
-            if btn.isPressed():
+z            if btn.isPressed():
                 return True
             time.sleep(0.01)
 
@@ -61,8 +60,8 @@ class TriPhase():
                 return True
             time.sleep(0.01)
 
-        pressed = blinkTimes(btn, third, 2)
+        pressed = blinkTimes(btn, third, 4)
         if pressed:
             return True
 
-        return blinkTimes(btn, third, 6)
+        return blinkTimes(btn, third, 8)
