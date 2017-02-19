@@ -4,6 +4,7 @@ import CHIP_IO.GPIO as GPIO
 import random
 from Effects import FlashThru
 from Effects import FlashAll
+from Solicitations import TriPhase
 
 # tests
 
@@ -17,6 +18,7 @@ buttons = [
 
 scroll = FlashThru(buttons, 0.05, 0.01, 3)
 blinkEm = FlashAll(buttons, 0.15, 0.15, 4)
+prompt = TriPhase()
 
 def getRandomButton(btns):
     return btns[random.randint(0, len(buttons)-1)]
@@ -26,19 +28,17 @@ def getAnother(btns, current):
     while btn == current:
         btn = getRandomButton(btns)
     return btn
-print("millis: " + str(int(round(time.time() * 1000))))
+
 btn = getRandomButton(buttons)
 
 while True:
     btn = getAnother(buttons, btn)
     print(btn.color)
-    btn.turnOn()
-    while btn.isPressed() == False:
-        time.sleep(0.05)  # sleep 50 milliseconds before checking again
+    answer = prompt.solicit(btn, 3)
 
     btn.turnOff()
-    if random.randint(0, 1) == 0:
+    if answer:
         scroll.run()
     else:
         blinkEm.run()
-    time.sleep(0.25)  # sleep 50 milliseconds before checking again
+    time.sleep(0.75)  # sleep 750 milliseconds before checking again
