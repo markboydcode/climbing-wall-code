@@ -18,7 +18,7 @@ class Continuous():
         endMillis = self._secondsOn * 1000 + startMillis
         self._btn.turnOn()
 
-        while currentMillis() < endMillis
+        while currentMillis() < endMillis:
             if btn.isPressed():
                 return True
 
@@ -41,10 +41,9 @@ def blinkTimes(durationMillis, times)
             btn.turnOn()
         endPhase = currentMillis() + phaseDuration
 
-        while currentMillis() < endPhase
+        while currentMillis() < endPhase:
             if self._btn.isPressed():
                 return True
-
             time.sleep(0.01)
 
 
@@ -64,8 +63,8 @@ class TriPhase():
                 return True
             time.sleep(0.01)
 
-        perssed = blinkTimes(third, 2);
-        if (pressed)
+        pressed = blinkTimes(third, 2)
+        if pressed:
             return True
 
-        return blinkTimes(third, 6);
+        return blinkTimes(third, 6)
