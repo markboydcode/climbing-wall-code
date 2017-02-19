@@ -39,7 +39,7 @@ while True:
     btn.turnOff()
     if answer:
         scroll.run()
-    else:
-        time.sleep(0.25)  # sleep 250 milliseconds before checking again
-        blinkEm.run()
+    #else:
+        #time.sleep(0.75)  # sleep 250 milliseconds before checking again
+        #blinkEm.run()
     time.sleep(0.75)  # sleep 750 milliseconds before checking again
