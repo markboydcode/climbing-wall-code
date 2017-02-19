@@ -34,7 +34,7 @@ btn = getRandomButton(buttons)
 while True:
     btn = getAnother(buttons, btn)
     print(btn.color)
-    answer = prompt.solicit(btn, 3)
+    answer = prompt.solicit(btn, 5)
 
     btn.turnOff()
     if answer:
