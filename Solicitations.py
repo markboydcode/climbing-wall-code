@@ -26,7 +26,7 @@ class Continuous():
         return False
 
 
-def blinkTimes(durationMillis, times):
+def blinkTimes(btn, durationMillis, times):
     # blink means off for half and on for half. Each of these halfs is a phase. There are twice as many phases as
     # there are flashes.
     phases = times * 2
@@ -61,8 +61,8 @@ class TriPhase():
                 return True
             time.sleep(0.01)
 
-        pressed = blinkTimes(third, 2)
+        pressed = blinkTimes(btn, third, 2)
         if pressed:
             return True
 
-        return blinkTimes(third, 6)
+        return blinkTimes(btn, third, 6)
